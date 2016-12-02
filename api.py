@@ -3,7 +3,7 @@
 import urllib2
 import json
 #Connection to the API
-f = urllib2.urlopen('http://api.wunderground.com/api/3ac6e1e077040844/geolookup/conditions/forecast/q/Australia/Sydney.json')
+f = urllib2.urlopen('http://api.wunderground.com/api/3ac6e1e077040844/geolookup/conditions/forecast/q/Kenya/Nairobi.json')
 json_string = f.read()
 
 parsed_json = json.loads(json_string)
@@ -33,7 +33,7 @@ print "\n"
 print "The current wind speed in MPH is: %s" % (wind)
 print "\n"
 print "===================================================================="
-print "HOPE YOU HAVE ENJOYED GETTING WEATHER UPDATES FROM SYDNEY !"
+print "HOPE YOU HAVE ENJOYED GETTING WEATHER UPDATES FROM NAIROBI !"
 print "\n"
 
 f.close()
